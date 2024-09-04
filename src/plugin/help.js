@@ -36,16 +36,16 @@ const seconds = Math.floor(uptime % 60); // Calculate seconds
 const uptimeMessage = `*I am alive now since ${day}d ${hours}h ${minutes}m ${seconds}s*`;
 const runMessage = `*☀️ ${day} Day*\n*🕐 ${hours} Hour*\n*⏰ ${minutes} Minutes*\n*⏱️ ${seconds} Seconds*\n`;
 
-const xtime = moment.tz("Asia/Colombo").format("HH:mm:ss");
-const xdate = moment.tz("Asia/Colombo").format("DD/MM/YYYY");
-const time2 = moment().tz("Asia/Colombo").format("HH:mm:ss");
+const xtime = moment.tz("Nigeria/Ghana").format("HH:mm:ss");
+const xdate = moment.tz("Nigeria/Ghana").format("DD/MM/YYYY");
+const time2 = moment().tz("Nigeria/Ghana").format("HH:mm:ss");
 let pushwish = "";
 
-if (time2 < "05:00:00") {
+if (time2 < "01:00:00") {
   pushwish = `Good Morning 🌄`;
-} else if (time2 < "11:00:00") {
+} else if (time2 < "01:00:00") {
   pushwish = `Good Morning 🌄`;
-} else if (time2 < "15:00:00") {
+} else if (time2 < "12:00:00") {
   pushwish = `Good Afternoon 🌅`;
 } else if (time2 < "18:00:00") {
   pushwish = `Good Evening 🌃`;
@@ -90,17 +90,17 @@ let mode = ethix.public ? 'public' : 'private';
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *TribalGamerNetwork*
 │📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
+│👨‍💻 ᴏᴡɴᴇʀ : *Timtech*      
+│👤 ɴᴜᴍʙᴇʀ: 233595885532
 │📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │🛡 ᴍᴏᴅᴇ: *${mode}*
 │💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴇᴛʜɪx-ᴍᴅ"
+              text: "© ᴘᴏᴡᴇʀᴇᴅ ʙʏ Timtech"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -130,67 +130,67 @@ let mode = ethix.public ? 'public' : 'private';
                   "buttonParamsJson": `{"title":"🔖𝚻𝚫𝚸 𝐅𝚯𝚪 𝚯𝚸𝚵𝚴 𝚳𝚵𝚴𝐔",
                  "sections":
                    [{
-                    "title":"😎 𝛯𝑇𝛨𝛪𝛸-𝛭𝐷 𝛥𝐿𝐿𝛭𝛯𝛮𝑈",
-                    "highlight_label":"🤩 𝛥𝐿𝐿𝛭𝛯𝛮𝑈",
+                    "title":"😎  All menu",
+                    "highlight_label":"🤩 All menu",
                     "rows":[
                       {
                        "header":"",
                        "title":"🔰 ᴀʟʟ ᴍᴇɴᴜ",
-                       "description":"🎨𝛯𝑇𝛨𝛪𝛸-𝛭𝐷 𝛥𝐿𝐿𝛭𝛯𝛮𝑈🎨",
+                       "description":"🎨All menu🎨",
                        "id":"View All Menu"
                       },
                       {
                         "header":"",
                         "title":"⬇️ ᴅᴏᴡɴʟᴀᴏᴅᴇʀ ᴍᴇɴᴜ",
-                        "description":"📂𝐒𝚮𝚯𝐖 𝚫𝐋𝐋 𝐃𝚯𝐖𝚴𝐋𝚯𝚫𝐃 𝐅𝚵𝚫𝚻𝐔𝚪𝚵𝐒🗂",
+                        "description":"📂Show all download features",
                         "id":"Downloader Menu"
                       },
                       {
                         "header":"",
                         "title":"👨‍👨‍👧‍👧ɢʀᴏᴜᴘ ᴍᴇɴᴜ",
-                        "description":"🥵𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝚫𝛁𝚰𝐋𝚫𝚩𝐋𝚵 𝐅𝚯𝚪 𝐆𝚪𝚯𝐔𝚸🥵",
+                        "description":"🥵Feature that are only for group🥵",
                         "id":"Group Menu"
                       },
                       {
                         "header":"",
                         "title":"👨‍🔧 ᴛᴏᴏʟ ᴍᴇɴᴜ",
-                        "description":"🛠 𝐒𝚮𝚯𝐖 𝚳𝚵 𝚻𝚯𝚯𝐋 𝚳𝚵𝚴𝐔",
+                        "description":"🛠 Tool Meni",
                         "id":"Tool Menu"
                       },
                       {
                         "header":"",
                         "title":"🗿 ᴍᴀɪɴ ᴍᴇɴᴜ",
-                        "description":"📪 𝚩𝚯𝚻 𝚳𝚫𝚰𝚴 𝐂𝚯𝚳𝚳𝚫𝚴𝐃𝐒🗳",
+                        "description":"📪 Bot main command🗳",
                         "id":"Main Menu"
                       },
                      {
                         "header":"",
                         "title":"👨‍💻 ᴏᴡɴᴇʀ ᴍᴇɴᴜ",
-                        "description":"😎𝐅𝚵𝚫𝚻𝐔𝚪𝚵 𝚻𝚮𝚫𝚻 𝚫𝚪𝚵 𝚯𝚴𝐋𝐘 𝐅𝚯𝚪 𝚳𝐘 𝚮𝚫𝚴𝐃𝐒𝚯𝚳𝚵 𝚯𝐖𝚴𝚵𝚪👨‍💼",
+                        "description":"😎feature that are only for handsome owner 👨‍💼",
                         "id":"Owner Menu"
                       },
                       {
                         "header":"",
                         "title":"✨ ᴀɪ ᴍᴇɴᴜ",
-                        "description":"💫 𝐒𝚮𝚯𝐖 𝚳𝚵 𝚫𝚰 𝚳𝚵𝚴𝐔 🎇",
+                        "description":"💫 AI MENU🎇",
                         "id":"Ai Menu"
                       },
                       {
                         "header":"",
                         "title":"🔍sᴇᴀʀᴄʜ ᴍᴇɴᴜ🔎",
-                        "description":"♂️ 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚵𝚫𝚪𝐂𝚮 𝚳𝚵𝚴𝐔",
+                        "description":"♂️ SEARCH MENU",
                         "id":"Search Menu"
                       },
                       {
                         "header":"",
                         "title":"🧚‍♂️ sᴛᴀʟᴋ ᴍᴇɴᴜ",
-                        "description":"👨‍💼 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐒𝚻𝚫𝐋𝐊 𝚳𝚵𝚴𝐔🪆",
+                        "description":"👨‍💼 STALK MENU",
                         "id":"Stalk Menu"
                       },
                       {
                         "header":"",
                         "title":"🥏 𝚌𝚘𝚗𝚟𝚎𝚛𝚝𝚎𝚛 𝚖𝚎𝚗𝚞",
-                        "description":"🛷 𝐒𝚮𝚯𝐖 𝚳𝚵 𝐂𝚯𝚴𝛁𝚵𝚪𝚻𝚵𝚪 𝚳𝚵𝚴𝐔",
+                        "description":"🛷 CONVERTER MENU",
                         "id":"Converter Menu"
                       }
                     ]}
@@ -221,10 +221,10 @@ let mode = ethix.public ? 'public' : 'private';
         const mode = process.env.MODE;
         const str = `hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *TribalGamerNetwork*
 │📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
+│👨‍💻 ᴏᴡɴᴇʀ : **Timtech
+│👤 ɴᴜᴍʙᴇʀ: 233595885532
 │💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │🛡 ᴍᴏᴅᴇ: *${mode}*
 │💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
